@@ -19,7 +19,7 @@ workflows:
           fi
           cd "$PROJECT_DIR"
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
-          gradle wrapper --gradle-version 8.7
+          gradle wrapper --gradle-version 8.9
           chmod +x gradlew
           ./gradlew assembleDebug
     artifacts:
